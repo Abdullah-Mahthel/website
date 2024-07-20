@@ -7,14 +7,14 @@
   }
 
 
-  body {
+  Body {
 
     background-color: #001;
     display: flex;
 
   }
 
-  .img-box {
+  .Img-box {
 
     width: 50px;
     height: 50px;
@@ -24,13 +24,13 @@
     flex-shrink: 0;
   }
 
-  .img-box img {
+  .Img-box img {
 
     width: 100%;
   }
 
 
-  .profile {
+  .Profile {
 
     display: flex;
     align-items: center;
@@ -38,13 +38,13 @@
   }
 
 
-  .profile h2 {
+  .Profile h2 {
 
     font-size: 20px;
     text-transform: capitalize;
   }
 
-  .menu {
+  .Menu {
 
     background-color: #123;
     width: 60px;
@@ -55,20 +55,20 @@
 
   }
 
-  .menu:hover {
+  .Menu:hover {
     width: 260px;
 
   }
 
 
-  ul {
+  Ul {
 
     list-style: none;
     position: relative;
     height: 95%;
   }
 
-  ul li a {
+  Ul li a {
 
     display: block;
     text-decoration: none;
@@ -81,35 +81,37 @@
     transition: .5s;
   }
 
-  ul li a:hover,
+  Ul li a:hover,
   .active,
-  .data-info .box:hover {
+  .Data-info .Box:hover,
+  Td:hover {
     background-color: #ffffff55;
   }
 
-  .log-out {
+  .Log-out {
 
     position: absolute;
     bottom: 0;
     width: 100%;
   }
 
-  .log-out a {
+  .Log-out a {
     background-color: #a00;
   }
 
-  ul li a i {
+  Ul li a i {
 
     font-size: 30px;
   }
 
-  .content {
+  .Content {
 
     width: 100%;
     margin: 10px;
   }
 
-  .title-info {
+  .Title-info {
+
     background-color: #0481ff;
     padding: 10px;
     display: flex;
@@ -117,25 +119,85 @@
     justify-content: space-between;
     border-radius: 8px;
     margin: 10px 0;
+
   }
 
-  .data-info {
+  .Data-info {
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
   }
 
-  .data-info .box {
+  .Data-info .Box {
 
     background-color: #123;
-    height: 150px;
+    height: 200px;
     flex-basis: 150px;
     flex-grow: 1;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+  }
+
+  .Data-info .Box i {
+
+    font-size: 40px;
+
+  }
+
+  .Data-info .Box .Data {
+
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  .Data-info .Box .Data span {
+
+    font-size: 30px;
+  }
+
+  Table {
+
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+
+  }
+
+  Td,
+  Th {
+
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  Th {
+
+    background-color: #0080ff;
+  }
+
+  .Price,
+  .Count {
+
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  .Price {
+
+    background-color: darkgreen;
+  }
+
+  .Count {
+
+    background-color: gold;
+    color: black;
+
   }
